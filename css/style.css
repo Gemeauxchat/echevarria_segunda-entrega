@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
 
 html{
-    overflow: hidden;
 }
 
 header{
@@ -407,37 +406,32 @@ footer{
     width:100%;
     background-color: rgb(176,164,164);
 }
-main .para-1{
+main #para-1{
     display:block;
-    text-align: justify;    
-    width:400px;
-    height:220px;
+    text-align: justify;
 }
 
-main .para-1 h2{
+main #para-1 h2{
     margin:10% 0% 0% 5%;
 }
 
-main .para-1 p{
+main #para-1 p{
     margin:5% 0% 0% 5%;
 }
 
-main .para-2{
+main #para-2{
     display:block;
     text-align:justify;
-    width:400px;
-    height:200px;
     align-items: right;
-    padding:0px 5% 0% 40%;
 }
 
-main .para-2 h2{
+main #para-2 h2{
     margin:10% 0% 0% 5%;
 
 }
 
 
-main .para-2 p{
+main #para-2 p{
     margin:5% 0% 0% 5%;
 
 }
@@ -667,10 +661,6 @@ main .steps .stp div .icon{
 main .le{
     display:flex;
     justify-content:left;
-}
-
-main section div{
-    padding: 1%;
 }
 
 main section div img{
