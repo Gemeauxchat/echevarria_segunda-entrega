@@ -1,0 +1,783 @@
+*{
+    margin:0px; padding:0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+
+html{
+    overflow: hidden;
+}
+
+header{
+    width:100%;
+    background-color: rgb(64,145,235);
+    padding: 14px 0px;
+    font-family: manrope, sans-serif;
+    display: flex;
+    justify-content:space-between;
+}
+
+header div{
+    padding-left:1%;
+    display: flex;
+    justify-content: space-around;
+}
+
+header section .logo{
+    width: 15px;
+    height:15px;
+}
+header .home{
+    margin-right:1%;
+}
+header .home a:hover{
+    color:snow;
+}
+
+header section .text{
+    margin-left: 5%;
+}
+
+header div .menu{
+    height: 15px;
+    width: 15px;
+    margin-right:5px;
+
+}
+
+#menu ul{
+    width: 16%;
+    margin:0px;
+    padding:0px;
+    background-color:rgb(176,164,164);
+    position:absolute;
+    left:86%;
+    border-end-start-radius: 10%;
+    display:block;
+    z-index: 2;
+}
+#menu ul li{
+    padding:5%;
+}
+
+nav ul{
+    padding-top:2%;
+    display:flex;
+    justify-content: space-evenly;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+nav ul li{
+    font-family: manrope;
+    list-style: none; 
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(136, 130, 130);
+}
+
+main{
+    z-index:1;
+    }
+
+main .welcome{
+    position:absolute;
+    left: 20%;
+    padding:40px 0px 0px 40px;
+    font-family: helvetica;
+    font-weight:400;
+}
+main .under{
+    padding: 75px 0px 40px 25px;
+    font-family:helvetica;
+    margin-left: 400px;
+    font-weight: 400;
+}
+/* Buttons
+.pressb{
+    font-family:helvetica;
+    border-style: none;
+    margin-left:150px;
+    margin-top:40px;
+    padding:15px;
+    border-radius: 20%;
+
+}
+button:visited{
+    background-color: darkgray; 
+There should be a program that allows only to be one item coloured at a time.
+}
+*/ 
+main .playing{
+    display:flex;
+    justify-content: left;
+}
+
+main .playing .contenedor-1{
+    height:177px;
+    width:315px;
+    display: flex;
+    align-items: center;
+}
+
+main .playing .contenedor-2{
+    height:177px;
+    width:500px;
+}
+
+main .playing .contenedor-2 .now{
+    display: none;
+    justify-content:left;
+}
+
+
+main .playing .contenedor-2 .star{
+    height:30px;
+    width:30px;
+    align-self: left;
+}
+
+
+main section .contenedor-3{
+    height:177px;
+    width:200px;
+}
+
+main section div .playing{
+    height:59px;
+    width:500px;
+}
+main section .contenedor-2 .search{
+    height:78px;
+    width:500px;
+    align-items: center;
+}
+main section .contenedor-2 input{
+    margin-left:3%;
+    width:47%;
+}
+main section .contenedor-2 button{
+    margin-left:3%;
+    padding: 0% 1%;
+}
+main section .contenedor-2 .filter{
+    height:40px;
+    width:500px;
+}
+
+main section .song-data{
+display: flex;
+}
+
+main section div .star{
+    height: 75px;
+    width: 75px;
+    align-items: flex-start;
+    padding:0px 0px 0px 20px;
+    
+}
+main .playing .contenedor-2 span .playingA{
+    box-sizing: border-box;
+    font-weight: 800;
+    font-family: Helvetica;
+    padding:10px;
+}
+main .playing .contenedor-2 span .playingB{
+    box-sizing: border-box;
+    font-family:Helvetica;
+    padding:0px 0px 0px 10px;
+}
+
+main .playing .search{
+    display:flex;
+    }
+
+main .playing .search p{
+    padding-top:5%;
+    padding-left: 5%;
+    transform: rotate(-45deg);
+    width:70px;
+    text-align: center;
+}
+
+main .playing .filter{
+    display:flex;
+    padding-left:5%;
+    align-items: center;
+}
+
+.ftr{
+        height:20px;
+        width:20px;
+    }
+/*Más excuchados*/
+main .mostl .first-line-ml{
+    display:flex;
+    justify-content:space-between;
+    margin-top:30px;
+    font-size:24px;
+}
+
+main .mostl .first-line-ml .tit{
+    padding: 0% 0% 2% 5%;
+}
+main .mostl .first-line-ml .space{
+    height:14%;
+    width:5%;
+}
+
+main .mostl .result{
+    height: 120px;
+    display:flex;
+}
+
+main .mostl .result .flecha-l{
+    height:120px;
+    width:15%;
+    display:flex;
+    justify-content:right;
+    align-items: center;
+
+}
+
+main .mostl .result .flecha-l img{
+    width: 25px;
+    height:25px;
+}
+main .mostl .result .flecha img{
+    width: 25px;
+    height:25px;
+}
+
+main .mostl .result .flecha{
+    height:120px;
+    width:15%;
+    display:flex;
+    align-items: center;
+
+}
+
+main .mostl .result .elements{
+    width:70%;
+    height:30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:5%;
+
+}
+
+main .mostl .result .elements .e{
+    width:20%;
+    height:30%;
+    margin-top:10%;
+}
+.songs{
+    display: inline;
+    list-style:none;
+}
+.ones{
+    display:inline;
+    text-align: justify;
+}
+main .mostl .first-line-ml .viewicon{
+    height:22px;
+    width:22px;
+    float: right;
+}
+
+.sleft{
+    height:50px;
+    width:50px;
+}
+.sright{
+    height:50px;
+    width:50px;
+}
+/*Number Selector*/
+main .buy{
+    margin-top:2%;
+    display:flex;
+    justify-content:space-around;
+}
+
+main .buy .numSelect{
+    font-family:helvetica;
+    font-size: medium;
+    margin-top:2%;
+    display:flex;
+    justify-content: center;
+}
+
+main .buy div .toggle-selector{
+width: 180px;
+display:flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+main .buy .numSelOpt{
+    padding-left:5%;
+    display:flex;
+    justify-content: left;
+    padding:2%;
+}
+
+main .buy .numSelOpt p{
+    padding:3% 2%;
+}
+
+main .buy button{
+    margin-top:30%;
+}
+main .buy .play{
+    height:50px;
+    width:50px;
+}
+.tit{
+    font-size: 24px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(64,145,235);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color:rgb(64,145,235);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(64,145,235);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+footer{
+    padding:14px;
+    width:100%;
+    background-color: rgb(176,164,164);
+}
+main .para-1{
+    display:block;
+    text-align: justify;    
+    width:400px;
+    height:220px;
+}
+
+main .para-1 h2{
+    margin:10% 0% 0% 5%;
+}
+
+main .para-1 p{
+    margin:5% 0% 0% 5%;
+}
+
+main .para-2{
+    display:block;
+    text-align:justify;
+    width:400px;
+    height:200px;
+    align-items: right;
+    padding:0px 5% 0% 40%;
+}
+
+main .para-2 h2{
+    margin:10% 0% 0% 5%;
+
+}
+
+
+main .para-2 p{
+    margin:5% 0% 0% 5%;
+
+}
+
+main section h2{
+    padding:2%;
+    background-color:rgb(176,164,164);
+}
+main section h4{
+padding:1% 2%;
+}
+main section p{
+padding:0% 2%;
+}
+
+main h1{
+    width:600px;
+    text-align: center;
+    padding:5% 2%;
+}
+.main-services{
+    display:flex;
+}
+.services{
+    width:620px;
+}
+
+main .column{
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+.main-services .services .users h5{
+padding:5%;
+width:250px;
+text-align:center;
+}
+
+.main-services .services .users p{
+width:250px;
+text-align:justify;
+}
+.main-services .services .empresas h5{
+padding:5%;
+width:250px;
+text-align:center;
+}
+
+.main-services .services .empresas p{
+width:250px;
+text-align:justify;
+}
+.main-services .services .artistas h5{
+padding:5%;
+width:250px;
+text-align:center;
+}
+
+.main-services .services .artistas p{
+width:250px;
+text-align:justify;
+}
+.main-services .services .ri h5{
+padding:5%;
+width:250px;
+text-align:center;
+}
+
+.main-services .services .ri p{
+width:250px;
+text-align:justify;
+}
+main aside img{
+    transform: rotate(-8deg);
+    width:220px;
+    height:fit-content;
+    padding:35%
+}
+main h1{
+    width: 100%;
+    justify-content:center;
+    padding-top:7%;
+    padding-bottom:7%;
+    font-family: Manrope;
+}
+
+main form{
+    width: 65%;
+    display: block;
+}
+main form div label{
+vertical-align:top;
+}
+
+main .login{
+    display:block;
+}
+main .login div{
+    display:flex;
+}
+
+main .login .email{
+    width:55.8%;
+    margin-left:1%;
+}
+
+main .login .pass{
+    width:62%;
+    margin-left:1%;
+}
+
+main .action{
+    display:block;
+}
+main .action .login-btn{
+margin-left:70%;
+padding: 1%;
+}
+
+main .action div{
+    margin-top:2%;
+    margin-left:20%;
+}
+
+main form div{
+    padding: 1% 1% 1% 20%;
+
+}
+
+main form div input{
+    width:55%;
+}
+
+main form div textarea{
+     width:55%;
+     height: 100px;
+}
+
+main p{
+margin:0% 0% 5% 5%;
+}
+
+main .registro{
+    display:block;
+}
+
+main .registro #name{
+    width:68%;
+}
+main .registro #apellido{
+    width:67.5%;
+}
+main .registro #email{
+    width:59.5%;
+}
+main .registro #address{
+    width:67%;
+}
+main .registro #zip-code{
+    width:64%;
+}
+main .registro #pass{
+    width:66.5%;
+}
+main .registro #pass-conf{
+    width:58.3%;
+}
+
+main .act{
+    display:flex;
+    justify-content: right;
+    align-items:center;
+    padding: 5%
+
+}
+
+main .act button{
+    padding:10%;
+}
+main .act .login-link{
+    padding-left:3%;
+}
+
+main .act .login-link :hover{
+    color: green;
+}
+
+main .welcome-name{
+    height:100px;
+    margin:0px;
+    padding: 5% 0% 1% 0%;
+}
+
+main .subt{
+    display:flex;
+    justify-content:center;
+    padding-left:20%;
+}
+
+main .description{
+    margin-top:5%;
+
+}
+
+main .steps{
+    display: flex;
+    justify-content:space-around;
+    
+}
+
+main .steps .stp{
+    width:20%;
+    text-align:justify;
+    display:block;
+}
+
+main .steps .stp div{
+    display:flex;
+}
+main .steps .stp div .icon{
+    width:60px;
+    height:60px;
+    padding:10%;
+    justify-content:center;
+}
+main .le{
+    display:flex;
+    justify-content:left;
+}
+
+main section div{
+    padding: 1%;
+}
+
+main section div img{
+    width: 17px;
+    height:17px;
+}
+main table{
+    width:90%;
+}
+
+main .bank div img{
+    width: 100px;
+    height:100px;
+    padding-right:30px;
+
+}
+main .bank{
+    height:40px;
+    display:flex;
+    justify-content: left;
+    padding: 10%;
+}
+
+main #class-add{
+    margin:2%;
+}
+main .add-ac form{
+    display:block;
+}
+main .add-ac .add{
+    display:flex;
+    justify-content:center;
+}
+
+main .precio{
+    padding:2%;
+
+}
+
+main .price-one{
+    display:flex;
+}
+
+main .price-two{
+    display: flex;
+}
+main .comision{
+    padding:1%;
+}
+main .save-comision{
+    display:flex;
+    justify-content:center;
+    margin:0% 26% 0% 0%;
+}
+
+main .qr div{
+    display:flex;
+    
+}
+main .qr div .text-qr{
+    width:15%;
+    text-align:left;
+    align-items:center;
+
+}
+main .qr div img{
+width: 100px;
+height:100px;
+padding: 0% 5% 0% 5%;
+}
+
+main .qr div .icon-qr-ac{
+    padding:0px 11px;
+    width:20px;
+    height:20px;
+}
+main .qr div .icon-qr-ac img{
+    width:20px;
+    height:20px;
+}
+main .play-admin{
+    display:block;
+    float:right;
+}
+
+main .play-admin div img{
+    width:100px;
+    height: 100px;
+    padding: 0px 200px 0% 0%;
+}
+
+main .report{
+    display:block;
+    padding:10%;
+    
+}
+main .report h5{
+padding:2% 0%;
+}
+main .report img{
+    width:100px;
+    height:100px;
+
+}
+
+footer{
+    position:relative;
+    bottom: 0%;
+    margin-top: 3%;
+}
